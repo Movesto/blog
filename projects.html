@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5mukx - Projects</title>
+    <link href="/src/styles/globals.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/src/components/navbar.js"></script>
+</head>
+<body class="bg-[#111111] text-white">
+    <div id="root">
+        <!-- Navbar Placeholder -->
+        <div id="navbar-placeholder"></div>
+
+        <!-- Projects Section -->
+        <section class="min-h-screen py-20 px-5">
+            <div class="container mx-auto max-w-5xl">
+                <h1 class="text-4xl font-bold mb-4 text-center">My Projects</h1>
+                <p class="text-[#888888] text-center mb-16 text-base">
+                    Here you can see my project details with short explanations along with links. Click the project titles to redirect to repositories.
+                </p>
+                
+                <!-- Project Cards Container -->
+                <div class="space-y-6">
+                    <!-- Project Card 1 -->
+                    <div class="bg-[#111111]/50 border border-[#222222] p-8 rounded-lg hover:border-[#333333] transition-colors">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-xl font-semibold flex items-center gap-2 group">
+                                <a href="#" class="hover:text-[#be2ed6] transition-colors">
+                                    Rust for Malware Development
+                                    <span class="inline-block transition-transform group-hover:translate-x-1">↗</span>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-[#888888] text-sm leading-relaxed">
+                                Using Rust as a weapon to create and build malwares. This repository contains my complete resources and coding practices for malware development.
+                            </p>
+                            <p class="text-[#888888] text-sm leading-relaxed">
+                                This repository contains source codes of various techniques used by real-world malware authors, red teamers, threat actors, state-sponsored hacking groups etc. These techniques are well-researched and implemented in Rust.
+                            </p>
+                            <div class="space-y-2">
+                                <h4 class="text-sm font-medium">Key Features:</h4>
+                                <ul class="text-[#888888] text-sm space-y-1 list-inside">
+                                    <li>• AV Evasion</li>
+                                    <li>• Obfuscating Payloads</li>
+                                    <li>• Encryter-X (Ransomware)</li>
+                                    <li>• Malwares and Keyloggers etc...</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#222222] text-[#888888]">Rust</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#222222] text-[#888888]">Malware</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#222222] text-[#888888]">Red Teaming</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#222222] text-[#888888]">Security</span>
+                            </div>
+                            <div class="flex items-center gap-4 pt-2">
+                                <div class="flex items-center gap-1">
+                                    <span class="text-[#ffd700]">★</span>
+                                    <span class="text-[#888888] text-sm">2,115</span>
+                                </div>
+                                <a href="#" class="inline-flex items-center gap-2 text-sm text-white hover:text-[#be2ed6] transition-colors">
+                                    View Repository
+                                    <span class="text-lg">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional project cards... -->
+                    <!-- Copy and modify the project card structure for other projects -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+    <script src="/src/main.js"></script>
+</body>
+</html> 

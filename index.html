@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5mukx</title>
+    <link href="/src/styles/globals.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/src/components/navbar.js"></script>
+</head>
+<body class="bg-[#111111] text-white">
+    <div id="root">
+        <!-- Navbar Placeholder -->
+        <div id="navbar-placeholder"></div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center px-5">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 bg-gradient-to-r from-[#ff4d8d] to-[#ff4d8d] text-transparent bg-clip-text">
+                    Hey, I'm Mohamed.
+                </h1>
+                <div class="flex flex-wrap justify-center items-center gap-5 mb-10 text-base text-[#888888]">
+                    <div class="flex items-center gap-2">
+                        <span class="text-[#ff4d8d]">></span>
+                        <span> Devops Engineer</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[#be2ed6]">⬡</span>
+                        <span>Red Teamer</span>
+                    </div>
+                  
+                </div>
+                <p class="max-w-2xl mx-auto text-[#888888] mb-10 text-base leading-relaxed">
+                    exploring interesting projects and sharing my knowledge in the field of Devops Engineering and Cybersecurity.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#projects" class="px-6 py-2 bg-[#be2ed6] text-white rounded hover:bg-opacity-90 transition-colors flex items-center gap-2 text-sm">
+                        View My Projects
+                        <span class="text-lg">→</span>
+                    </a>
+                    <a href="#blog" class="px-6 py-2 bg-transparent border border-[#333333] text-white rounded hover:border-[#be2ed6] transition-colors flex items-center gap-2 text-sm">
+                        Read My Blog
+                        <span class="text-lg">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="py-20 px-5">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl font-bold mb-4 text-center">Featured Projects</h2>
+                <p class="text-[#888888] text-center mb-12 text-base">
+                    A selection of my most significant work in Devops Engineering and Cybersecurity
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-[#1a1a1a] p-6 rounded-lg hover:bg-opacity-80 transition-colors">
+                        <h3 class="text-xl font-bold mb-2">Install Arch Linux on VirtualBox for Hacking</h3>
+                        <p class="text-[#888888] mb-4 text-sm">
+                            Install Arch Linux and configule Lux for security
+                        </p>
+                        <a href="/projects.html#rust-malware" class="text-[#be2ed6] hover:text-opacity-80 text-sm flex items-center gap-1">
+                            Learn more <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-[#1a1a1a] p-6 rounded-lg hover:bg-opacity-80 transition-colors">
+                        <h3 class="text-xl font-bold mb-2">Install and configure Windows Server 2022 on VirtualBox</h3>
+                        <p class="text-[#888888] mb-4 text-sm">
+                            Install and configure Windows Server 2022 on VirtualBox.
+                        </p>
+                        <a href="/projects.html#powershell-hackers" class="text-[#be2ed6] hover:text-opacity-80 text-sm flex items-center gap-1">
+                            Learn more <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-[#1a1a1a] p-6 rounded-lg hover:bg-opacity-80 transition-colors">
+                        <h3 class="text-xl font-bold mb-2">Windows Server Setup Guide</h3>
+                        <p class="text-[#888888] mb-4 text-sm">
+                            Setup and configure Windows Server 2022 and Windows 11 on VirtualBox
+                        </p>
+                        <a href="/projects.html#windows-server" class="text-[#be2ed6] hover:text-opacity-80 text-sm flex items-center gap-1">
+                            Learn more <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="/projects.html" class="inline-flex items-center gap-2 px-6 py-2 bg-transparent border border-[#333333] text-white rounded hover:border-[#be2ed6] transition-colors text-sm">
+                        View all projects
+                        <span class="text-lg">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Articles -->
+        <section id="blog" class="py-20 px-5 bg-[#1a1a1a]">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-3xl font-bold mb-4 text-center">Latest Articles</h2>
+                <p class="text-[#888888] text-center mb-12 text-base">
+                    Insights and tutorials on cybersecurity, red teaming, and software development
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Article 1 -->
+                    <div class="bg-[#111111] p-6 rounded-lg hover:bg-opacity-80 transition-colors">
+                        <div class="text-sm text-[#888888] mb-2">Nov 11, 2024 • 10 min read</div>
+                        <h3 class="text-xl font-bold mb-2">The Art of Learning Programming for Red Teaming and CyberSecurity</h3>
+                        <p class="text-[#888888] mb-4 text-sm">
+                            Exploring the importance of programming skills in red teaming operations and cybersecurity engagements
+                        </p>
+                        <a href="/blog.html#article-1" class="text-[#be2ed6] hover:text-opacity-80 text-sm flex items-center gap-1">
+                            Read article <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="bg-[#111111] p-6 rounded-lg hover:bg-opacity-80 transition-colors">
+                        <div class="text-sm text-[#888888] mb-2">Mar 27, 2024 • 9 min read</div>
+                        <h3 class="text-xl font-bold mb-2">Malware Development Essentials Part 1</h3>
+                        <p class="text-[#888888] mb-4 text-sm">
+                            A comprehensive guide to the fundamentals of malware development, covering core concepts and techniques
+                        </p>
+                        <a href="/blog.html#article-2" class="text-[#be2ed6] hover:text-opacity-80 text-sm flex items-center gap-1">
+                            Read article <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="/blog.html" class="inline-flex items-center gap-2 px-6 py-2 bg-transparent border border-[#333333] text-white rounded hover:border-[#be2ed6] transition-colors text-sm">
+                        View all articles
+                        <span class="text-lg">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4">
+            <div class="container mx-auto text-center">
+                <p class="text-[#888888]">© 2025 All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/src/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html> 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed - About</title>
+    <link href="/src/styles/globals.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/src/components/navbar.js"></script>
+</head>
+<body class="bg-[#111111] text-white">
+    <div id="root">
+        <!-- Navbar Placeholder -->
+        <div id="navbar-placeholder"></div>
+
+        <!-- About Content -->
+        <section class="min-h-screen py-28 px-5">
+            <div class="container mx-auto max-w-6xl">
+                <h1 class="text-4xl font-bold mb-16 text-center">About Me</h1>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <!-- Left Column: Profile Card -->
+                    <div class="md:col-span-1 space-y-6">
+                        <div class="bg-[#1a1a1a] p-6 rounded-lg text-center border border-[#222222]">
+                            <img src="kilo.JPG" alt="5mukx Profile Picture" class="w-40 h-40 rounded-full mx-auto mb-4 border-2 border-[#be2ed6]">
+                            <h2 class="text-2xl font-semibold">Mohamed</h2>
+                            <p class="text-[#888888] text-sm mb-4">Mohamed, 24</p>
+                            <div class="flex justify-center space-x-4 text-[#888888]">
+                                <a href="#" class="hover:text-[#be2ed6]"><i data-lucide="github" class="w-5 h-5"></i></a>
+                                <a href="#" class="hover:text-[#be2ed6]"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                                <a href="#" class="hover:text-[#be2ed6]"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-[#1a1a1a] p-6 rounded-lg border border-[#222222]">
+                            <div class="flex items-center mb-3">
+                                <span class="text-[#be2ed6] mr-2">$</span>
+                                <span class="font-mono">whoami</span>
+                            </div>
+                            <ul class="text-sm space-y-1 text-[#888888]">
+                                <li class="flex items-center"><span class="text-green-500 mr-2">></span> Devops Engineer</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">></span> Red Teamer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Text Content -->
+                    <div class="md:col-span-2 space-y-8">
+                        <div class="bg-[#1a1a1a] p-8 rounded-lg border border-[#222222]">
+                            <h3 class="text-xl font-semibold mb-4">Hello friend</h3>
+                            <p class="text-[#bbbbbb] text-sm leading-relaxed">
+                                Hello friend, your friendly neighborhood 5mukx here. My name is Mo, i am 20 years old who's really into security stuff like red teaming and making malware. When i'm not coding, i am engaged with cloud activities like deployment and scaling. Full stack development.
+                            </p>
+                        </div>
+                        <div class="bg-[#1a1a1a] p-8 rounded-lg border border-[#222222]">
+                            <h3 class="text-xl font-semibold mb-4">Skills & Expertise</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Linux Administration</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Git</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Python</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Cloud Development</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Bash</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Network Analysis</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Red Teaming</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Cloud Security</span>
+                            </div>
+                        </div>
+                        <div class="bg-[#1a1a1a] p-8 rounded-lg border border-[#222222]">
+                            <h3 class="text-xl font-semibold mb-4 text-[#be2ed6]">Legal Disclaimer</h3>
+                            <p class="text-[#bbbbbb] text-xs leading-relaxed">
+                                The information you gather from this site, social accounts, blogs; all the techniques, proofs-of-concept code, or whatever else you may possibly find here, are strictly for educational purposes. I do not condone the usage of anything you might gather from this blog or my videos for malicious purposes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/src/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html> 

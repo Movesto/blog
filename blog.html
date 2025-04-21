@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed's Blog</title>
+    <link href="/src/styles/globals.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/src/components/navbar.js"></script>
+</head>
+<body class="bg-[#111111] text-white">
+    <div id="root">
+        <!-- Navbar Placeholder -->
+        <div id="navbar-placeholder"></div>
+
+        <!-- Blog Content -->
+        <section class="min-h-screen py-28 px-5">
+            <div class="container mx-auto max-w-4xl">
+                <h1 class="text-4xl font-bold mb-4 text-center">Blog Posts</h1>
+                <p class="text-[#888888] text-center mb-16 text-base">
+                    Sharing my knowledge and insights on cybersecurity, red teaming, Devops Engineering, and more.
+                </p>
+                
+                <!-- Blog Post List -->
+                <div class="space-y-12">
+                    <!-- Blog Post 1 -->
+                    <article id="article-1">
+                        <h2 class="text-2xl font-semibold mb-2 hover:text-[#be2ed6] transition-colors">
+                            <a href="#">The art of Learning Programming for Red teaming and CyberSecurity</a>
+                        </h2>
+                        <div class="text-sm text-[#888888] mb-4">Nov 11, 2024 • 10 min read</div>
+                        <p class="text-[#bbbbbb] text-sm leading-relaxed mb-4">
+                            This is a Blog Covering the Importance of learning programming for Red Teaming and CyberSecurity Engagements. If anyone says 'programming is not applicable for red team' ikem...
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Programming</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Red Teaming</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Skills</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center gap-1 text-sm text-[#be2ed6] hover:text-opacity-80">
+                            Read More <span class="text-lg">→</span>
+                        </a>
+                    </article>
+
+                    <hr class="border-t border-[#222222]">
+
+                    <!-- Blog Post 2 -->
+                    <article id="article-2">
+                        <h2 class="text-2xl font-semibold mb-2 hover:text-[#be2ed6] transition-colors">
+                            <a href="#">Malware Development Essentials Part 1</a>
+                        </h2>
+                        <div class="text-sm text-[#888888] mb-4">Mar 27, 2024 • 9 min read</div>
+                        <p class="text-[#bbbbbb] text-sm leading-relaxed mb-4">
+                            Become an Beginner to Intermediate on Maldev field. This covers Fundamentals, core concepts, Functions, OS Internets and more...
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">malware</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">windows</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Basics</span>
+                            <span class="px-3 py-1 text-xs rounded-full bg-[#282828] text-[#bbbbbb]">Kernels</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center gap-1 text-sm text-[#be2ed6] hover:text-opacity-80">
+                            Read More <span class="text-lg">→</span>
+                        </a>
+                    </article>
+
+                    <!-- Add more articles here -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/src/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html> 
