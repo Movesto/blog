@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A clone of 5mukx website",
   "scripts": {
-    "dev": "live-server",
-    "start": "live-server"
+    "dev": "live-server --open=views/index.html",
+    "start": "live-server --open=views/index.html"
   },
   "devDependencies": {
     "live-server": "^1.2.0"
