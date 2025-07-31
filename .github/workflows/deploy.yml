@@ -1,0 +1,47 @@
+# .github/workflows/deploy.yml
+
+# Name of the workflow, which will be displayed in the "Actions" tab of your GitHub repository.
+name: Deploy Blog to GitHub Pages
+
+# This section defines when the workflow should run.
+# 'on: push:' means it will trigger on every push event.
+on:
+  push:
+    # We only want to run this workflow when changes are pushed to the 'main' branch.
+    branches:
+      - main
+
+# This section defines the jobs that will be executed as part of the workflow.
+jobs:
+  # We have a single job named 'deploy'.
+  deploy:
+    # The type of machine to run the job on. 'ubuntu-latest' is a standard choice.
+    runs-on: ubuntu-latest
+
+    # This is the sequence of steps that the job will execute.
+    steps:
+      # Step 1: Check out your repository's code
+      # This action downloads a copy of your repository onto the runner machine.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up GitHub Pages
+      # This is an official GitHub Action that configures the environment for a Pages deployment.
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Step 3: Upload the website files as an artifact
+      # This action takes your website files (in this case, everything in the root)
+      # and packages them into an artifact that can be deployed.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # The path to the files you want to deploy. '.' means the root of your repository.
+          path: '.'
+
+      # Step 4: Deploy to GitHub Pages
+      # This final action takes the artifact created in the previous step and
+      # publishes it to your GitHub Pages site.
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
